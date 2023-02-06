@@ -1,0 +1,173 @@
+body {
+    margin: 0%;
+    background-color: #c5cbe3;
+}
+body h1 {
+    text-align: center;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f13c20;
+}
+.abstract {
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+
+
+/* Index Logo, Navbar, and section below Logo */
+header nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #4056a1;
+}
+
+#borderlessDreams { /* Index Logo */
+    transform: translate(10%, 16%);
+}
+header img {
+    display: block;
+    height: 120px;
+    width: 240px;
+}
+
+header ul { /* Index Navbar */
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navLink, .navLink2 {
+    padding-right: 15px;
+}
+.navLink a, .navLink2 a {
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #c5cbe3;
+}
+.navLink a {
+    padding: 5px 10px;
+    border: solid 1px #d79922;
+    border-radius: 18px;
+    display: block;
+}
+
+.navLink a:hover {
+    background-color: #d79922;
+    color: #4056a1;
+}
+.navLink2 a:hover {
+    border-bottom: 1px solid #d79922;
+}
+
+#logoNameHolder { /* logo name holder */
+    background-color: #c5cbe3;
+    width: 100%;
+    display: inline-block;
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Index Slideshow */
+.slideContainer {
+    background-color: #c5cbe3;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.slideTrack {
+    display: flex;
+    overflow: hidden;
+    width: 975px; /*670*/
+    justify-content: flex-start;
+}
+.slideTrack a {
+    padding: 20px 30px;
+    animation: iconSlide 18s ease-in-out 2s infinite alternate none;
+}
+.slideTrack img {
+    height: 275px;
+    width: 275px;
+    display: block;
+}
+.slideTrack a:hover {
+    border-bottom: #f13c20 solid 5px;
+}
+@keyframes iconSlide {
+    from {transform: translateX(0px);}
+    to {transform: translateX(calc(100% * -5));}
+}
+
+.slideContainer p {
+    font-size: 2em;
+    color: #f13c20;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#indexSlideAbstract1 {
+    height: 350px;
+    width: 350px;
+    bottom: 0px;
+    right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* index "about" split section */
+.splitContainer {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 30px 0px;
+    position: relative;
+}
+#indexAbout {
+    background-color: #4056a1;
+}
+.splitContainer img {
+    height: 400px;
+    width: 400px;
+    z-index: 2;
+}
+.splitContainer span {
+    color: #d79922;
+}
+.splitContainer p {
+    margin: 0%;
+    max-width: 45%;
+    color: #c5cbe3;
+    font-size: 2em;
+    font-family: 'Libre Franklin', sans-serif;
+    z-index: 2;
+}
+#aboutAbstract1 {
+    left: 0;
+    top: 45%;
+    height: 500px;
+    width: 500px;
+}
