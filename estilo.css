@@ -11,6 +11,7 @@
 
 
 
+/*==================== INDEX PAGE ====================*/
 
 /* Index Logo, Navbar, and section below Logo */
 header nav{
@@ -77,20 +78,22 @@ header ul { /* Index Navbar */
     display: flex;
     justify-content: space-evenly;
     position: relative;
+    padding: 10px 0px;
 }
 .slideTrack {
     display: flex;
     overflow: hidden;
-    width: 975px; /*670*/
+    width: 930px; /*310, 620, 930*/
     justify-content: flex-start;
+    border: solid red 1px;
 }
 .slideTrack a {
     padding: 20px 30px;
-    animation: iconSlide 18s ease-in-out 2s infinite alternate none;
+    animation: iconSlide 18s ease-in-out 3s infinite alternate none;
 }
 .slideTrack img {
-    height: 275px;
-    width: 275px;
+    height: 250px;
+    width: 250px;
     display: block;
 }
 .slideTrack a:hover {
@@ -102,7 +105,7 @@ header ul { /* Index Navbar */
 }
 
 .slideContainer p {
-    font-size: 2em;
+    font-size: 1.75em;
     color: #f13c20;
     font-family: 'Libre Franklin', sans-serif;
 }
@@ -126,19 +129,6 @@ header ul { /* Index Navbar */
     padding: 30px 0px;
     position: relative;
 }
-.splitContainer img {
-    height: 400px;
-    width: 400px;
-    z-index: 2;
-}
-.splitContainer p {
-    margin: 0%;
-    max-width: 45%;
-    font-size: 2em;
-    font-family: 'Libre Franklin', sans-serif;
-    z-index: 2;
-    line-height: 1.25;
-}
 .splitContainer a {
     color: #efe2ba;
     background-color: #4056a1;
@@ -146,14 +136,25 @@ header ul { /* Index Navbar */
     text-decoration: none;
     padding: 1px 5px;
 }
-.splitContainer a:hover {
+.splitContainer a:hover { /*financial links*/
     color: #f13c20;
 }
 #index-split-container {
     background-color: #4056a1;
 }
-#index-split-text { /* unique to index split */
-    color: #efe2ba;
+#index-split-image, #financial-split-image {
+    height: 400px;
+    width: 400px;
+    z-index: 2;
+}
+#index-split-text {
+    color: #efe2ba; /* unique to index split */
+    margin: 0%;
+    max-width: 45%;
+    font-size: 2em;
+    font-family: 'Libre Franklin', sans-serif;
+    z-index: 2;
+    line-height: 1.25;
 }
 #index-split-header{
     color: #d79922;
@@ -161,7 +162,8 @@ header ul { /* Index Navbar */
 #index-split-abstract {
     left: 0;
     top: 50%;
-    scale: 110%;
+    height: 440px;
+    width: 440px;
 }
 
 
@@ -200,13 +202,117 @@ header ul { /* Index Navbar */
 
 
 
+/*==================== INDEX RESPONSIVENESS ====================*/
+
+@media only screen and (max-width: 1190px) {
+    /* index slideshow */
+    .slideTrack {
+        width: 620px;
+    }
+    @keyframes iconSlide {
+        from {transform: translateX(0px);}
+        to {transform: translateX(calc(100% * -6));}
+    }
+}
+
+
+@media only screen and (max-width: 1052px) {
+    /* index "about" split */
+    #index-split-abstract {
+        height: 400px;
+        width: 400px;
+    }
+    #index-split-image {
+        height: 400px;
+        width: 400px;
+    }
+    #index-split-text {
+        font-size: 1.5em;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    /* nav logo */
+    header img {
+        height: 80px;
+        width: 160px;
+    }
+
+    /*nav links*/
+    .navLink a, .navLink2 a {
+        font-size: 1em;
+    }
+}
+
+
+@media only screen and (max-width: 960px) {
+    .slideTrack {
+        width: 310px;
+    }
+    @keyframes iconSlide {
+        from {transform: translateX(0px);}
+        to {transform: translateX(calc(100% * -7));}
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    #index-split-abstract {
+        height: 300px;
+        width: 300px;
+    }
+    #index-split-image {
+        height: 300px;
+        width: 300px;
+    }
+    #index-split-text {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    header ul {         /*tempoary fix until dropdown menu*/
+        display: none;
+    }
+
+    /* index about split: mobile attributes */
+    #index-split-container {
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    #index-split-abstract {
+        display: none;
+    }
+    #index-split-image {
+        transform: rotate(35deg);
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        left: -120px;
+        top: -10px;
+    }
+    #index-split-text {
+        padding-top: 50px;
+        max-width: 90%;
+    }
+}
+
+
+
+
 
 /*==================== FINANCIAL PAGE ====================*/
 
-/* financial header : splitContainer */
+/* financial split */
 #financial-split-text {
-    color: #4056a1;
-    font-size: 1.8em;
+    color: #4056a1; /* unique to financial split */
+    font-size: 1.8em; /* unique to financial split */
+    margin: 0%;
+    max-width: 45%;
+    font-family: 'Libre Franklin', sans-serif;
+    z-index: 2;
+    line-height: 1.25;
 }
 #financial-split-header {
     color: #f13c20;
