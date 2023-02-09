@@ -78,7 +78,7 @@ header ul { /* Index Navbar */
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    padding: 10px 0px;
+    padding: 15px 0px;
 }
 .slideTrack {
     display: flex;
@@ -92,7 +92,7 @@ header ul { /* Index Navbar */
     animation: iconSlide 18s ease-in-out 3s infinite alternate none;
 }
 .slideTrack img {
-    height: 250px;
+    height: 250px; /* starting index-slide-img*/
     width: 250px;
     display: block;
 }
@@ -110,7 +110,7 @@ header ul { /* Index Navbar */
     font-family: 'Libre Franklin', sans-serif;
 }
 
-#indexSlideAbstract1 {
+#index-slide-abstract {
     height: 290px;
     width: 290px;
     bottom: 0px;
@@ -205,13 +205,23 @@ header ul { /* Index Navbar */
 /*==================== INDEX RESPONSIVENESS ====================*/
 
 @media only screen and (max-width: 1190px) {
-    /* index slideshow */
+
     .slideTrack {
-        width: 620px;
+        width: 690px; /* 230, 460, 690 */
     }
-    @keyframes iconSlide {
-        from {transform: translateX(0px);}
-        to {transform: translateX(calc(100% * -6));}
+    .slideTrack a {
+        padding: 10px 15px;
+    }
+    .slideTrack img {
+        height: 200px; /* 250 -> 200 */
+        width: 200px;
+    }
+    .slideContainer p {
+        font-size: 1.5em;
+    }
+    #index-slide-abstract {
+        height: 220px; /* 440 -> 220 */
+        width: 220px;
     }
 }
 
@@ -233,31 +243,33 @@ header ul { /* Index Navbar */
 
 
 @media only screen and (max-width: 1000px) {
-    /* nav logo */
+    /* nav logo  & links */
     header img {
         height: 80px;
         width: 160px;
     }
-
-    /*nav links*/
     .navLink a, .navLink2 a {
         font-size: 1em;
     }
-}
 
 
-@media only screen and (max-width: 960px) {
+    /* adjusting index slideshow to show 2 slides */
     .slideTrack {
-        width: 310px;
+        width: 460px;
     }
     @keyframes iconSlide {
         from {transform: translateX(0px);}
-        to {transform: translateX(calc(100% * -7));}
+        to {transform: translateX(calc(100% * -6));}
+    }
+    #index-slide-abstract {
+        height: 200px;
+        width: 200px;
     }
 }
 
 
 @media only screen and (max-width: 800px) {
+    /* index about split */
     #index-split-abstract {
         height: 300px;
         width: 300px;
@@ -270,6 +282,20 @@ header ul { /* Index Navbar */
         font-size: 1em;
     }
 }
+
+
+@media only screen and (max-width: 760px) {
+    /* adjusting index slideshow to show 1 slide */
+    .slideTrack {
+        width: 230px;
+    }
+    @keyframes iconSlide {
+        from {transform: translateX(0px);}
+        to {transform: translateX(calc(100% * -7));}
+    }
+
+}
+
 
 @media only screen and (max-width: 570px) {
     header ul {         /*tempoary fix until dropdown menu*/
@@ -299,6 +325,28 @@ header ul { /* Index Navbar */
 }
 
 
+@media only screen and (max-width: 530px) {
+    .slideContainer p {
+        font-size: 1.2em; /*1.5 -> 1.2*/
+    }
+    .slideTrack img {
+        height: 150px; /* 200 -> 150, 30 width of padding */
+        width: 150px;
+    }
+    .slideTrack {
+        width: 180px;
+    }
+    #index-slide-abstract {
+        height: 160px; /*200 -> 150*/
+        width: 160px;
+    }
+}
+
+@media only screen and (max-width: 440px) { /* iPhone XR */
+    .slideContainer p {
+        font-size: .9em;
+    }
+}
 
 
 
