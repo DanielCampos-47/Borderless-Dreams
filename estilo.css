@@ -141,19 +141,21 @@ header ul { /* Index Navbar */
 #index-split-container {
     background-color: #4056a1;
 }
-#index-split-image, #financial-split-image {
+#index-split-image, #financial-split-image { /* cant unify because abstracts are also img */
     height: 400px;
     width: 400px;
     z-index: 2;
 }
-#index-split-text {
-    color: #efe2ba; /* unique to index split */
+.splitContainer p {
     margin: 0%;
     max-width: 45%;
-    font-size: 2em;
     font-family: 'Libre Franklin', sans-serif;
     z-index: 2;
     line-height: 1.25;
+}
+#index-split-text {
+    color: #efe2ba; /* unique to index split */
+    font-size: 2em; /* unique to index split */ 
 }
 #index-split-header{
     color: #d79922;
@@ -201,7 +203,66 @@ header ul { /* Index Navbar */
 
 
 
-/*==================== INDEX RESPONSIVENESS ====================*/
+
+
+
+
+
+
+/*==================== FINANCIAL PAGE ====================*/
+
+/* financial split */
+#financial-split-text {
+    color: #4056a1; /* unique to financial split */
+    font-size: 1.8em; /* unique to financial split */
+}
+#financial-split-header {
+    color: #f13c20;
+}
+/*financial-split-image { 400x400 with z-index = 2 }, w/ source code */
+/* no abstract in this splitContainer */
+
+
+
+
+
+
+/* financial information container */
+.financial-info-bubble {
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    background-color: #efe2ba;
+}
+
+.financial-bubble-heading {
+    color: white;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0%;
+    background-color: #4056a1;
+    padding: 5px 0px;
+}
+.financial-bubble-text {
+    margin: 0%;
+    padding: 15px;
+    color: #4056a1;
+    font-family: 'Libre Franklin', sans-serif;
+}
+.financial-bubble-question {
+    color: #4056a1;
+    font-size: 1.5em;
+    display: block;
+}
+
+
+
+
+
+/*==================== RESPONSIVENESS ====================*/
 
 @media only screen and (max-width: 1190px) {
     /*----- INDEX : slideshow -----*/
@@ -221,6 +282,13 @@ header ul { /* Index Navbar */
     #index-slide-abstract {
         height: 220px; /* 440 -> 220 */
         width: 220px;
+    }
+}
+
+@media only screen and (max-width: 1149px) {
+    /*----- FINANCIAL : fAid? -----*/
+    #financial-split-text {
+        font-size: 1.6em;
     }
 }
 
@@ -298,7 +366,7 @@ header ul { /* Index Navbar */
 
 }
 
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 583px) {
     /*----- INDEX : about -----*/
     #index-split-container { /*mobile attributes*/
         text-align: center;
@@ -344,67 +412,4 @@ header ul { /* Index Navbar */
     .slideContainer p {
         font-size: .9em;
     }
-}
-
-
-
-
-
-/*==================== FINANCIAL PAGE ====================*/
-
-/* financial split */
-#financial-split-text {
-    color: #4056a1; /* unique to financial split */
-    font-size: 1.8em; /* unique to financial split */
-    margin: 0%;
-    max-width: 45%;
-    font-family: 'Libre Franklin', sans-serif;
-    z-index: 2;
-    line-height: 1.25;
-}
-#financial-split-header {
-    color: #f13c20;
-}
-#financial-split-abstract {
-    height: 500px;
-    width: 500px;
-    right: 0px;
-    bottom: 5%;
-}
-/* no abstract in this splitContainer */
-
-
-
-
-
-
-/* financial information bubbles */
-.financial-bubble {
-    color: white;
-    border-radius: 10px;
-    margin: 10px;
-    overflow: hidden;
-}
-.financial-bubbleHeading {
-    color: white;
-    text-align: center;
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    margin: 0%;
-    background-color: #4056a1;
-    padding: 5px 0px;
-}
-.financial-bubbleText {
-    background-color: #c5cbe3;
-    margin: 0%;
-    padding: 15px;
-    color: #4056a1;
-    font-family: 'Libre Franklin', sans-serif;
-}
-.financial-bubbleQuestion {
-    color: #4056a1;
-    font-size: 1.5em;
-    text-decoration: underline overline red;
-    display: block;
 }
