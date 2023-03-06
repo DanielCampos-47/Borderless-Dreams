@@ -14,39 +14,36 @@
         <nav>
             <a id="borderlessDreams" href="index.html"><img src="images/logo.svg" alt="Borderles Dreams Logo"></a>
 
-            <ul>
+            <ul id="financial-nav">
                 <li class="navLink2"><a href="https://www1.cuny.edu/mu/cunyverse/2022/06/14/giving-back-with-the-cuny-immigrant-ambassador-program/" target="_blank">About IAP</a></li>
                 <li class="navLink2"><a href="">Contact</a></li>
                 <li class="navLink"><a href="financial.html" target="_self">Financial Aid</a></li>
                 <li class="navLink"><a href="">College</a></li>
                 <li class="navLink"><a href="">Alternatives</a></li>
             </ul>
+
+            <button class="dropdown-button" onclick="toggleNav('financial-nav')" ><img src="images/menu.png" alt="Icon of hamburger menu"></button>
         </nav>
     </header>
 
     <section id="logoNameHolder"></section> <!--added from desktop-->
+    
 
 
 
-
-
+    <!--test if adding a class to images breaks styling-->
     <section class="splitContainer" id="financial-split-container">
         <p id="financial-split-text"><span id="financial-split-header">What Exactly Is Financial Aid?</span><br><br>Financial aid is funding attained through <a href="https://en.wikipedia.org/wiki/Grant_(money)" target="_blank">grants</a>, <a href="https://en.wikipedia.org/wiki/Federal_Work-Study_Program" target="_blank">work-study</a>, <a href="https://en.wikipedia.org/wiki/Loan" target="_blank">loans</a>, or <a href="https://en.wikipedia.org/wiki/Scholarship" target="_blank">scholarships</a> designated to help you pay for college or career school. Keep reading to learn about financial aid opportunities open to the undocumented community and what applications to stay away from based on your unique status. </p>
 
         <img id="financial-split-image" src="images/illustrations/aid.svg" alt="Illustration Doctor Inspecting a Money Bag">
     
-        <img class="split-hidden" id="financial-split-hidden1" src="images/illustrations/leftMoney.svg" alt="">
-        <img class="split-hidden" id="financial-split-hidden2" src="images/illustrations/rightMoney.svg" alt="">
+        <img class="split-hidden financial-split-hidden1" src="images/illustrations/leftMoney.svg" alt="">
+        <img class="split-hidden financial-split-hidden2" src="images/illustrations/rightMoney.svg" alt="">
     </section>
 
     
 
-    <!--
-        <br><br>
-        <span class="financial-bubble-question"></span>
-        <span class="financial-bubble-answer"></span>
-        <a href="" target="_blank"></a>
-    -->
+
 
     <section class="financial-info-bubble">
         <p class="financial-bubble-heading">The Free Application for Federal Student Aid (FAFSA) <button class="financial-bubble-button" onclick="toggleDisplay('financial-fafsa-text')">&#128065;</button></p>
@@ -61,7 +58,7 @@
             <span class="financial-bubble-answer">Undocumented students can apply for the <a href="#financial-dream-bubble">NYSDA(New York State Dream Act)</a>.</span>
             <br><br>
             <span class="financial-bubble-question">Financial aid tied to FAFSA + other federal aid</span>
-            <span class="financial-bubble-answer">Federal <a href="https://studentaid.gov/understand-aid/types/grants/pell" target="_blank">Pell Grants</a> for undergraduate students, <a href="https://studentaid.gov/understand-aid/types/grants/fseog" target="_blank">FSEOG</a>(Federal Supplemental Educational Opportunity Grant), <a href="https://studentaid.gov/understand-aid/types/grants/teach" target="_blank">TEACH</a>(Teacher Educational Assistance for College and Higher Education) Grant, <a href="https://studentaid.gov/understand-aid/types/grants/iraq-afghanistan-service" target="_blank">Iraq and Afghanistan Service Grant</a>, Federal <a href="https://studentaid.gov/understand-aid/types/work-study" target="_blank">Work-Study Program</a>, Federal <a href="https://studentaid.gov/understand-aid/types/loans" target="_blank">Student Loans</a>, Federal <a href="https://studentaid.gov/understand-aid/types/international" target="_blank">Aid for International Study</a>, education <a href="https://studentaid.gov/resources/tax-benefits" target="_blank">tax benefits</a>, community service <a href="https://www.americorps.gov/" target="_blank">AmeriCorp</a> awards, <a href="https://studentaid.gov/sites/default/files/foster-youth-vouchers.pdf" target="_blank">ETV</a>(Educational and Training Vouchers) for Young People Currently and Formerly in Foster Care, and scholarship or loan repayment programs through <a href="https://www.ihs.gov/loanrepayment/" target="_blank">Indian Health Service</a>, <a href="https://www.lrp.nih.gov/" target="_blank">National Institutes of Health</a>, and <a href="https://nhsc.hrsa.gov/" target="_blank">National Health Service Corps</a>.</span> 
+            <span class="financial-bubble-answer">Federal <a href="https://studentaid.gov/understand-aid/types/grants/pell" target="_blank">Pell Grants</a> only for undergraduate students, <a href="https://studentaid.gov/understand-aid/types/grants/fseog" target="_blank">FSEOG</a>(Federal Supplemental Educational Opportunity Grant), <a href="https://studentaid.gov/understand-aid/types/grants/teach" target="_blank">TEACH</a>(Teacher Educational Assistance for College and Higher Education) Grant, <a href="https://studentaid.gov/understand-aid/types/grants/iraq-afghanistan-service" target="_blank">Iraq and Afghanistan Service Grant</a>, Federal <a href="https://studentaid.gov/understand-aid/types/work-study" target="_blank">Work-Study Program</a>, Federal <a href="https://studentaid.gov/understand-aid/types/loans" target="_blank">Student Loans</a>, Federal <a href="https://studentaid.gov/understand-aid/types/international" target="_blank">Aid for International Study</a>, education <a href="https://studentaid.gov/resources/tax-benefits" target="_blank">tax benefits</a>, community service <a href="https://www.americorps.gov/" target="_blank">AmeriCorp</a> awards, <a href="https://studentaid.gov/sites/default/files/foster-youth-vouchers.pdf" target="_blank">ETV</a>(Educational and Training Vouchers) for Young People Currently and Formerly in Foster Care, and scholarship or loan repayment programs through <a href="https://www.ihs.gov/loanrepayment/" target="_blank">Indian Health Service</a>, <a href="https://www.lrp.nih.gov/" target="_blank">National Institutes of Health</a>, and <a href="https://nhsc.hrsa.gov/" target="_blank">National Health Service Corps</a>.</span> 
         </p>
     </section>
 
@@ -69,7 +66,7 @@
         <p class="financial-bubble-heading">The Senator Jose Peralta NYS DREAM Act <button class="financial-bubble-button" onclick="toggleDisplay('financial-dream-text')">&#128065;</button></p>
         <p class="financial-bubble-text" id="financial-dream-text">
             <span class="financial-bubble-question">What's the NYS DREAM Act?</span>
-            <span class="financial-bubble-answer">Undocumented students can apply for the <a href="https://www.hesc.ny.gov/dream/" target="_blank">NYSDA(New York State Dream Act)</a> to become eligible for New York State-administered student financial aid such as <a href="#financial-tap-bubble">TAP(Tuition Assistance Program)</a>, the <a href="https://www.hesc.ny.gov/pay-for-college/financial-aid/types-of-financial-aid/nys-grants-scholarships-awards/the-excelsior-scholarship.html" target="_blank">Excelsior Scholarship</a>, the <a href="https://www.hesc.ny.gov/pay-for-college/financial-aid/types-of-financial-aid/nys-grants-scholarships-awards/enhanced-tuition-awards.html" target="_blank">Enhanced Tuition Awards</a> program, the <a href="https://www.hesc.ny.gov/pay-for-college/financial-aid/types-of-financial-aid/nys-grants-scholarships-awards/nys-science-technology-engineering-and-mathematics-stem-incentive-program.html" target="_blank">STEM Incentive Program</a> and more. If you qualify for state aid under the NYS Dream act, you must separately qualify and apply for each financial aid program separately!</span>
+            <span class="financial-bubble-answer">Undocumented students can apply for the <a href="https://www.hesc.ny.gov/dream/" target="_blank">NYSDA(New York State Dream Act)</a> to become eligible for New York State-administered student financial aid such as <a href="#financial-tap-bubble">TAP(Tuition Assistance Program)</a>, the <a href="#financial-excelsior-bubble">Excelsior Scholarship</a>, the <a href="https://www.hesc.ny.gov/pay-for-college/financial-aid/types-of-financial-aid/nys-grants-scholarships-awards/enhanced-tuition-awards.html" target="_blank">Enhanced Tuition Awards</a> program, the <a href="https://www.hesc.ny.gov/pay-for-college/financial-aid/types-of-financial-aid/nys-grants-scholarships-awards/nys-science-technology-engineering-and-mathematics-stem-incentive-program.html" target="_blank">STEM Incentive Program</a> and more. If you qualify for state aid under the NYS Dream act, you must separately qualify and apply for each financial aid program separately!</span>
             <br><br>
             <span class="financial-bubble-question">Is it safe to apply?</span>
             <span class="financial-bubble-answer">Families don't have to fear deportation, colleges are prohibited by law from reporting a student's immigration status without student consent. New York State and your college are bound by law to keep your immigration status confidential. The information you provide will only be used to determine eligibility for awards and to adiminister financial aid you are able to receive.</span>
@@ -87,16 +84,23 @@
         </p>
     </section>
 
-    <section class="financial-info-bubble">
+    <section class="financial-info-bubble" id="financial-excelsior-bubble">
         <p class="financial-bubble-heading">The Excelsior Scholarship Program <button class="financial-bubble-button" onclick="toggleDisplay('financial-excelsior-text')">&#128065;</button></p>
         <p class="financial-bubble-text" id="financial-excelsior-text">
             <span class="financial-bubble-question">What's the Excelsior Scholarship?</span>
-            <span class="financial-bubble-answer"></span>
+            <span class="financial-bubble-answer">After other federal and state grants and scholarships have been applied, the <a href="https://www.hesc.ny.gov/pay-for-college/financial-aid/types-of-financial-aid/nys-grants-scholarships-awards/the-excelsior-scholarship.html#horizontalTab2" target="_blank">Excelsior Scholarship</a> then will cover any remaning gap in tuition expenses up to $5,500. It is only available for New York residents who attend an undergraduate program at a SUNY or CUNY. If you are in an undergraduate program of study, the scholarship will support you for up to five years given that you complete a total of 30 credits each academic year. If you are in an opportunity program, the scholarship will support you for up to five years given that you complete a total of 24 credits each academic year. </span>
 
         </p>
     </section>
 
+    <section class="splitContainer" id="financial-split-tax-container">
+        <img id="financial-split-tax-image" src="images/taxHouse.svg" alt="Illustration of a home labeled Tax">
 
+        <p id="financial-split-tax-text"><span id="financial-split-tax-header">Why Should You Pay Taxes?</span><br><br>If you wish to work towards U.S. citizenship, having a <a href="https://www.uscis.gov/policy-manual/volume-12-part-d-chapter-9#:~:text=An%20applicant%20for%20naturalization%20must,of%20the%20Oath%20of%20Allegiance." target="_blank">good moral character</a> is essential for the success of your applications. Paying taxes as an undocumented person is the perfect way to demonstrate that you want to be here; nothing says "I want to be a U.S. citizen" more than supporting tax-funded public assistance programs that you don't benefit from just because of your status.</p>
+    
+        <img class="split-hidden financial-split-hidden1" src="images/illustrations/leftMoney.svg" alt="">
+        <img class="split-hidden financial-split-hidden2" src="images/illustrations/rightMoney.svg" alt="">
+    </section>
 
 
 

@@ -6,7 +6,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Borderles Dreams</title>
     <link rel='stylesheet'  media='all' href='estilo.css'>
-    
+    <script src="motor.js"></script>
 </head>
 
 <body id="index-cuerpo">
@@ -14,17 +14,20 @@
         <nav>
             <a id="borderlessDreams" href="index.html"><img src="images/logo.svg" alt="Borderles Dreams Logo"></a>
 
-            <ul>
+            <ul id="index-nav">
                 <li class="navLink2"><a href="https://www1.cuny.edu/mu/cunyverse/2022/06/14/giving-back-with-the-cuny-immigrant-ambassador-program/" target="_blank">About IAP</a></li>
                 <li class="navLink2"><a href="">Contact</a></li>
                 <li class="navLink"><a href="financial.html" target="_self">Financial Aid</a></li>
                 <li class="navLink"><a href="">College</a></li>
                 <li class="navLink"><a href="">Alternatives</a></li>
             </ul>
+
+            <button class="dropdown-button" onclick="toggleNav('index-nav')" ><img src="images/menu.png" alt="Icon of hamburger menu"></button>
+
         </nav>
     </header>
 
-    <section id="logoNameHolder"></section>
+    <section id="logoNameHolder"></section> <!--added from desktop-->
 
 
     
@@ -36,7 +39,7 @@
                 <img src="images/icons/connect.svg" alt="">
             </a>
             <a href="">
-                <img src="images/icons/correct.svg" alt="">
+                <img src="images/icons/taxes.svg" alt="">
             </a>
             <a href="">
                 <img src="images/icons/study.svg" alt="">
@@ -68,7 +71,7 @@
 
 
     <!-- About this wesbite -->
-    <section class="splitContainer" id="index-split-container">
+    <section class="splitContainer" id="index-split-container"> <!--change id to be more precise/ allow for other splits-->
         <img class="abstract" id="index-split-abstract" src="images/shapes/abstract.svg" alt="Abstract Illustration">
         
         <img id="index-split-image" src="images/icons/promo.png" alt="Illustration of a motivational speaker">
@@ -154,7 +157,7 @@
 
 
 
-
+    <div> Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect"> Pixel perfect </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
 
 </body>
 </html>
