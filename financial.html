@@ -45,7 +45,7 @@
 
 
 
-    <section class="financial-info-bubble">
+    <section class="financial-info-bubble"> <!--first bubble section has no id because theres no link that needs to jump to it yet-->
         <p class="financial-bubble-heading">The Free Application for Federal Student Aid (FAFSA) <button class="financial-bubble-button" onclick="toggleDisplay('financial-fafsa-text')">&#128065;</button></p>
         <p class="financial-bubble-text" id="financial-fafsa-text">
             <span class="financial-bubble-question">What is FAFSA?</span>
@@ -54,7 +54,7 @@
             <span class="financial-bubble-question">Is FAFSA undocumented friendly?</span>
             <span class="financial-bubble-answer">FAFSA is not available to undocumented students because a SSN is required to create a FederalStudentAid ID, parents do not require a SSN. Many non-U.S. citizens qualify for federal student aid, refer to the <a href="https://studentaid.gov/understand-aid/eligibility/requirements/non-us-citizens" target="_blank">FSA(FederalStudentAid) wesbite</a> to determine your elegibility.</span>
             <br><br>
-            <span class="financial-bubble-question">FAFSA alternatives</span>
+            <span class="financial-bubble-question">FAFSA Alternatives</span>
             <span class="financial-bubble-answer">Undocumented students can apply for the <a href="#financial-dream-bubble">NYSDA(New York State Dream Act)</a>.</span>
             <br><br>
             <span class="financial-bubble-question">Financial aid tied to FAFSA + other federal aid</span>
@@ -80,7 +80,7 @@
             <span class="financial-bubble-answer"><a href="https://www.hesc.ny.gov/pay-for-college/apply-for-financial-aid/nys-tap.html#horizontalTab2" target="_blank">TAP(New York State Tuition Assitance Program)</a> can award an annual grant of up to $5,665, grants do not have to be paid back. TAP is available in New York State approved schools in CUNY, SUNY, and any non-for-profit independent degree-granting college on a part-time basis. <a href="https://www.hesc.ny.gov/pay-for-college/apply-for-financial-aid/nys-tap/part-time-tap.html" target="_blank">Part-time TAP</a> is available for part-time students, given they fulfill some prerequisites.</span>
             <br><br>
             <span class="financial-bubble-question">Applying for TAP through the NYS DREAM Act</span>
-            <span class="financial-bubble-answer">1) Students applying for NYS financial aid for the first time must first apply for eligibility throught the NYS DREAM act.<br>2) If a student is declared eligible under the NYS DREAM act, to apply for TAP they simply need to start a new application.<br>3) After submitting your application it is up to you to monitor its status online, expect an email determining your eligibility.<br>4) If you are offered an award, the last step is to accept the award through your colleges financial aid portal.</span>
+            <span class="financial-bubble-answer">(1) Students applying for NYS financial aid for the first time must first apply for eligibility throught the NYS DREAM act.<br><br>(2) If a student is declared eligible under the NYS DREAM act, to apply for TAP they simply need to start a new application.<br><br>(3) After submitting your application it is up to you to monitor its status online, expect an email determining your eligibility.<br><br>(4) If you are offered an award, the last step is to accept the award through your colleges financial aid portal.</span>
         </p>
     </section>
 
@@ -89,20 +89,32 @@
         <p class="financial-bubble-text" id="financial-excelsior-text">
             <span class="financial-bubble-question">What's the Excelsior Scholarship?</span>
             <span class="financial-bubble-answer">After other federal and state grants and scholarships have been applied, the <a href="https://www.hesc.ny.gov/pay-for-college/financial-aid/types-of-financial-aid/nys-grants-scholarships-awards/the-excelsior-scholarship.html#horizontalTab2" target="_blank">Excelsior Scholarship</a> then will cover any remaning gap in tuition expenses up to $5,500. It is only available for New York residents who attend an undergraduate program at a SUNY or CUNY. If you are in an undergraduate program of study, the scholarship will support you for up to five years given that you complete a total of 30 credits each academic year. If you are in an opportunity program, the scholarship will support you for up to five years given that you complete a total of 24 credits each academic year. </span>
-
         </p>
     </section>
+
+
+
+
 
     <section class="splitContainer" id="financial-split-tax-container">
         <img id="financial-split-tax-image" src="images/taxHouse.svg" alt="Illustration of a home labeled Tax">
 
-        <p id="financial-split-tax-text"><span id="financial-split-tax-header">Why Should You Pay Taxes?</span><br><br>If you wish to work towards U.S. citizenship, having a <a href="https://www.uscis.gov/policy-manual/volume-12-part-d-chapter-9#:~:text=An%20applicant%20for%20naturalization%20must,of%20the%20Oath%20of%20Allegiance." target="_blank">good moral character</a> is essential for the success of your applications. Paying taxes as an undocumented person is the perfect way to demonstrate that you want to be here; nothing says "I want to be a U.S. citizen" more than supporting tax-funded public assistance programs that you don't benefit from just because of your status.</p>
+        <p id="financial-split-tax-text"><span id="financial-split-tax-header">Why Should You Pay Taxes?</span><br><br>If you wish to work towards U.S. citizenship, having a <a href="https://www.uscis.gov/policy-manual/volume-12-part-d-chapter-9#:~:text=An%20applicant%20for%20naturalization%20must,of%20the%20Oath%20of%20Allegiance." target="_blank">good moral character</a> in the eyes of the governemnt is essential for your applications. Being registered with the IRS will also let you receive payment from academic opportunity programs that normally wouldn't have the means to pay you.</p>
     
         <img class="split-hidden financial-split-hidden1" src="images/illustrations/leftMoney.svg" alt="">
         <img class="split-hidden financial-split-hidden2" src="images/illustrations/rightMoney.svg" alt="">
     </section>
 
-
+    <section class="financial-info-bubble"> <!--first tax bubble section has no id because theres no link that needs to jump to it yet-->
+        <p class="financial-bubble-heading">Registering with the IRS <button class="financial-bubble-button" onclick="toggleDisplay('financial-tax-how-text')">&#128065;</button></p>
+        <p class="financial-bubble-text" id="financial-tax-how-text">
+            <span class="financial-bubble-question">How do I get started?</span>
+            <span class="financial-bubble-answer">A U.S. citizen will use their <a>SSN</a>(Social Security Number) to uniquely identify themselves with the <a>IRS</a>(Internal Revenue Service), the IRS will use a SSN to keep track of an individuals finances. Undocumented people are eligible to apply for a free <a>ITIN</a>(Individual Taxpayer Identification Number) that they can use in place of a SSN with the IRS, all they need to do is submit a <a>W-7 tax form</a> with an original copy of <a>valid identification</a> by mail. The option to apply in person with an IRS-authorized <a>Certifying Acceptance Agent</a> is available but their services are not free, people have been charged upwards of $200 for an ITIN at the offices listed on the IRS website. Thankfully there are a multitude of free tax assitance programs with minimal qualification requirements, they mainly require individuals to make under a certain amount per year.</span>
+            <br><br>
+            <span class="financial-bubble-question">Free Tax Assitance Programs</span>
+            <span class="financial-bubble-answer">The tax assitance programs listed below may only have offices you can visit in certain boroughs but they partner with the <a>New York Public Library</a> to host free tax assitance every day in libraries across New York City. Visit the NYC Public Library website to learn about <a>host locations</a> and <a>upcoming events</a>.<br><br>(1) <a>Ariva</a>: They provide free financial counseling as well as free tax preparation services, they work to remove barries to financial and economic access in typically underserved communities. On their website they explicitly state that they can help someone <a>apply for an ITIN</a>!<br><br>(2) <a>AARP</a>: They offer in-person and virtual Tax-Aide services to anyone who qualifies, they have a special focus on taxpayers who are over 50 or have low to moderate income.<br><br>(3) <a>Food Bank</a>: Their over overarching goal is to end food poverty in the five boroughs by concentrating on helping low-income New Yorkers overcome their circumstances. One of their approaches is to provide free <a>tax filing services</a>, which has contributed to returning over $1 billion to low-income New Yorkers thus far.<br><br>(4) <a>Single Stop</a>: The IRS offers free tax preparation services for qualifying taxpayers through their Volunteer Income Tax Assitance(VITA) and Tax Counseling for the Elderly(TCE) programs. Use the <a>VITA/TCE Locator Tool</a> to find Single Stop locations near you.</span>
+        </p>
+    </section>
 
 
 

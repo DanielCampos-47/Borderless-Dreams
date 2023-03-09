@@ -158,8 +158,8 @@ header ul { /* Index Navbar */
     background-color: #4056a1;
 }
 #index-split-image, #financial-split-image, #financial-split-tax-image { /* cant unify because abstracts are also img, unify with a class dumbo */ 
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     z-index: 2;
 }
 .splitContainer p {
@@ -274,7 +274,7 @@ header ul { /* Index Navbar */
 .financial-bubble-question {
     color: #4056a1;
     font-size: 1.5em;
-    display: block;
+    display: block; /*makes sure questions are on their own line*/
 }
 .financial-bubble-answer a {
     color: #f13c20;
@@ -313,6 +313,9 @@ header ul { /* Index Navbar */
 /*==================== RESPONSIVENESS ====================*/
 
 @media only screen and (max-width: 1190px) {
+    header ul {
+        display: flex;
+    }
     /*----- INDEX : slideshow -----*/
     .slideTrack {
         width: 690px; /* 230, 460, 690 */
@@ -332,10 +335,6 @@ header ul { /* Index Navbar */
         width: 220px;
     }
     /*----- FINANCIAL : tax-split -----*/
-    #financial-split-tax-image {
-        height: 350px;
-        width: 350px;
-    }
     #financial-split-tax-text {
         font-size: 1.6em;
     }
@@ -473,7 +472,7 @@ header ul { /* Index Navbar */
     #index-nav, #financial-nav{
         position: absolute;
         flex-wrap: wrap;
-        max-width: min-content;
+        max-width: 111px;
         background-color:#d79922;
         right: 0px;
         top: 70px;
